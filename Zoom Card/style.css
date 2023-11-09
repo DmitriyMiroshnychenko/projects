@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,300&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --fullSize: 100%;
+  --space-xl: 2rem;
+  --space-l: 1.5rem;
+  --space-m: 1.25rem;
+  --space: 1rem;
+  --space-ss: 0.75rem;
+  --space-s: 0.5rem;
+  --space-xs: 0.25rem;
+  --fs-l: 1.4375rem;
+  --fs-m: 1.25rem;
+  --fs-default: 1rem;
+  --fs-s: 0.9rem;
+  --fs-xs: 0.875rem;
+  --clr-default: #fff;
+  --blue-accent100: #528ad3c0;
+  --blue-accent200: #3599;
+  --cyan: hsl(183deg 96% 56%);
+  --anim-time--hi: 266ms;
+  --anim-time--med: 400ms;
+  --anim-time--lo: 600ms;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  min-block-size: 100vh;
+  font: 16px/1.3 "Roboto", sans-serif;
+  background-color: hsl(190, 17%, 75%);
+}
+
+.card {
+  --header-size--min: 12.75rem;
+  --header-size--max: 19rem;
+  --width: 20rem;
+  --height: 27rem;
+  --easing: cubic-bezier(0.5, 0, 0.2, 1);
+  --easing1: cubic-bezier(0.4, 0.3, 0.65, 1);
+  --easing2: cubic-bezier(0.8, 0, 0.6, 1);
+  --easing3: cubic-bezier(0, 0.2, 0.25, 1);
+  display: flex;
+  flex-direction: column;
+  inline-size: var(--width);
+  block-size: var(--height);
+  border-radius: 0.125rem;
+  background: #fff;
+  overflow: hidden;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0 30px 60px -30px;
+}
