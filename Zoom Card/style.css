@@ -104,7 +104,8 @@ header::before {
 }
 
 header::after {
-  background: url("") no-repeat;
+  background: url("https://st2.depositphotos.com/1290955/10308/i/450/depositphotos_103088356-stock-photo-corals-and-fish-in-the.jpg")
+    no-repeat;
   background-size: cover;
   background-position: 80%;
 }
