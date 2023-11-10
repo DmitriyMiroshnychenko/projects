@@ -271,3 +271,18 @@ header::after {
   animation: pulse var(--anim-time--med) var(--easing1);
   animation-iteration-count: 2;
 }
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.3);
+  }
+}
+
+.icon__link:focus-within {
+  color: var(--cyan);
+}
