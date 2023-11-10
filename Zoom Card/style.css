@@ -216,3 +216,58 @@ header::after {
   transition: opacity var(--anim-time--hi) var(--easing2),
     transform var(--anim-time--hi) var(--easing2);
 }
+
+.footer {
+  display: flex;
+  align-items: center;
+  margin-top: auto;
+  margin-inline: var(--space);
+  height: calc(var(--space-m) * 3);
+}
+
+.footer > * {
+  flex-grow: 1;
+}
+
+.link__text {
+  width: max-content;
+  padding: 0.35em 1.25em;
+  font-size: var(--fs-s);
+  font-weight: 900;
+  color: var(--blue-accent100);
+  pointer-events: none;
+}
+
+.expand__indicator {
+  transition: opacity var(--anim-time--lo) var(--easing);
+}
+
+.card__content:hover .expand__indicator {
+  opacity: 0;
+  transition: opacity var(--anim-time--lo) var(--easing3);
+}
+
+.footer__navigation {
+  display: inline-flex;
+  align-items: center;
+  height: 100%;
+  gap: var(--space);
+  justify-content: right;
+}
+
+.icon__link {
+  display: inline-flex;
+  height: max-content;
+  width: max-content;
+  justify-content: center;
+  align-items: center;
+  color: rgba(128, 20, 20, 0.467);
+  font-size: 1rem;
+  background: 0;
+  border: 0;
+}
+
+.icon__link:hover {
+  animation: pulse var(--anim-time--med) var(--easing1);
+  animation-iteration-count: 2;
+}
